@@ -1,0 +1,8 @@
+services:
+  postgresql:
+    image: payl8r_decrypt:latest
+    ports:
+      - 20032:80
+    volumes:
+      - ./public-key/public_key.pem:/var/www/html/public_key.pem
+    restart: always
